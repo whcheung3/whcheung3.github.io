@@ -1,0 +1,336 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+
+/* Landscape Viewport for Wide Full Desktop Screen */
+@media only screen and (orientation: landscape) {
+  #homepage {
+    /* Content Width Limited to 1,024 pixels */
+    max-width: 1024px;
+    /* 2 Columns Grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Reset Height */
+    height: initial !important;
+  }
+
+  .section {
+    max-width: 1024px;
+  }
+
+  #icon {
+    grid-column: 1;
+    margin-bottom: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #title {
+    grid-column: 1;
+  }
+
+  #about td,
+  #about th {
+    padding: 0.5em !important;
+  }
+
+  #about .grid {
+    padding: 2em;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 5% !important;
+  }
+
+  #education td {
+    font-size: 1.2em;
+    padding: 4em !important;
+  }
+
+  #education th {
+    padding: 4em !important;
+  }
+}
+
+/* Portrait Viewport for Narrow Mobile Phone Screen */
+@media only screen and (orientation: portrait) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #about p {
+    margin-bottom: 5%;
+    font-size: 0.8em;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  text-align: center;
+  /* Text No Wrap */
+  white-space: nowrap;
+  /* Scrolling Animation */
+  scroll-behavior: smooth;
+  /* Font from Google Fonts */
+  font-family: "Oxygen", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+th {
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+button {
+  /* Circle Shape */
+  border-radius: 50%;
+  border: 0;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  font-size: 1.8em;
+  /* Pointer when Focus on Buttons */
+  cursor: pointer;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url("background.jpg");
+  /* Add Blur Effect */
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  /* Keep Background Image in Center */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home */
+#homepage {
+  /* Keep Content in Center Position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 95%;
+  width: 95%;
+}
+
+#icon {
+  /* Circle Shape */
+  border-radius: 100%;
+  width: 13em;
+  height: 13em;
+  margin-top: 10%;
+  object-fit: cover;
+}
+
+nav {
+  /* 2 Columns Grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 7%;
+}
+
+nav a {
+  /* Makes Pointer Only Focus on the Button itself */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-1 {
+  margin-top: -20px;
+  margin-bottom: 15%;
+}
+
+.description-2 {
+  margin-top: 10px;
+}
+
+#btn-about,
+#btn-education {
+  background-color: transparent;
+}
+
+#btn-resume {
+  background-color: rgb(255, 50, 50);
+}
+
+#btn-contact {
+  background-color: rgb(0, 180, 0);
+}
+
+/* Sections */
+.section {
+  width: 95%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about,
+#education,
+#contact {
+  height: 100%;
+  width: 100%;
+  white-space: normal;
+  text-align: initial;
+}
+
+#about {
+  background-color: rgb(72, 113, 144);
+}
+
+#education {
+  background-color: rgb(133, 63, 63);
+}
+
+#contact {
+  background-color: rgb(38, 97, 67);
+}
+
+/* Back & Menu */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-back {
+  margin-bottom: 1em;
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+}
+
+.menu h2 {
+  white-space: nowrap;
+  font-size: 1.6em;
+  margin: 0;
+  text-align: center;
+}
+
+/* About Me */
+#about th {
+  padding: 0.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#about td {
+  padding: 0.2em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#about caption {
+  text-align: left;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+#about .grid {
+  border: 1px solid white;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-gap: 5%;
+}
+
+#about a {
+  color: white;
+}
+
+/* Education */
+#education th {
+  text-align: center;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#education td {
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#education .grid {
+  border: 1px solid white;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-gap: 5%;
+}
+
+.year,
+.school {
+  font-size: 0.8em;
+}
+
+/* Contact Me */
+form {
+  border: 1px solid white;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+input,
+textarea {
+  padding: 0.4em;
+  font-size: 1.2em;
+  border: 0;
+  border-radius: 0.3em;
+  font-family: "Oxygen", sans-serif;
+  font-size: 0.8em;
+}
+
+textarea {
+  grid-column: 2/3;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 100px;
+  background-color: rgb(32, 178, 98);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover and Focus */
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+  background-color: lightgreen;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid black;
+  background-color: lightgray;
+}

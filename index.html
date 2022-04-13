@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wing Ho Cheung" />
+    <!-- Title -->
+    <title>Portfolio | Wing Ho Cheung</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- own CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Background Image -->
+    <div class="bg-image"></div>
+
+    <!-- Top Section -->
+    <div id="homepage">
+      <h1 id="name">Wing Ho Cheung</h1>
+      <!-- a professional title I hope to get in the future -->
+      <p id="title">Web / Mobile App Developer</p>
+      <!-- an image of me -->
+      <img id="icon" src="profile.JPG" alt="profile-picture" width="300" />
+
+      <nav>
+        <!-- About link to an Infographic Section on the same page -->
+        <a href="#about">
+          <button id="btn-about">
+            <i class="fa-solid fa-address-card"></i></button
+        ></a>
+
+        <!-- Education link to an Education Section on the same page -->
+        <a href="#education">
+          <button id="btn-education">
+            <i class="fa-solid fa-graduation-cap"></i></button
+        ></a>
+
+        <p class="description-1">About Me</p>
+        <p class="description-1">Education</p>
+
+        <!-- Resume link to download a PDF version of resume -->
+        <a href="resume.pdf" download="WingHoCheung_resume_2022.pdf"
+          ><button id="btn-resume">
+            <i class="fa-solid fa-download"></i></button
+        ></a>
+
+        <!-- Contact link to a Contact Me form on the same page -->
+        <a href="#contact">
+          <button id="btn-contact">
+            <i class="fa-solid fa-phone"></i></button
+        ></a>
+
+        <p class="description-2">Resume</p>
+        <p class="description-2">Contact Me</p>
+      </nav>
+    </div>
+
+    <!-- Infographic Section -->
+    <div id="about">
+      <div class="section">
+        <div class="menu">
+          <button class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <h2>About Me</h2>
+        </div>
+        <div class="grid">
+          <table>
+            <caption>
+              Basic Information
+            </caption>
+            <tr>
+              <th>Name:</th>
+              <td>Wing Ho Cheung</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>
+                <a href="mailto:whcheung3@myseneca.ca">whcheung3@myseneca.ca</a>
+              </td>
+            </tr>
+            <tr>
+              <th>Sudent ID:</th>
+              <td>158387209</td>
+            </tr>
+            <tr>
+              <th>Age:</th>
+              <!-- fake age -->
+              <td><span id="age">99</span></td>
+            </tr>
+            <tr>
+              <th>Current Date:</th>
+              <td>
+                <!-- fake date -->
+                <time id="current-date" datetime="99-99-9999">99/99/9999</time>
+              </td>
+            </tr>
+            <tr>
+              <th>Course:</th>
+              <td>WEB222</td>
+            </tr>
+            <tr>
+              <th>Section:</th>
+              <td>ZBB</td>
+            </tr>
+            <tr>
+              <th>Professor's Name:</th>
+              <td>Noman Atique</td>
+            </tr>
+          </table>
+          <div class="honesty">
+            <h3>Honesty Statement</h3>
+            <p>
+              I declare that my assessment is wholly my own work in accordance
+              with Seneca Academic Policy. No part of this assessment has been
+              copied manually or electronically from any other source (including
+              web sites) except for the information supplied by the WEB222
+              instructors and / or made available in this assessment for my use.
+              I also declare that no part of this assignment has been
+              distributed to other students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education">
+      <div class="section">
+        <div class="menu">
+          <button class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <h2>Education</h2>
+        </div>
+        <div class="grid">
+          <table>
+            <tr>
+              <th>
+                <span class="year">2021 - 2023 (expected)</span>
+                <br />
+                Ontario College Diploma
+              </th>
+              <td>
+                <span class="school">Seneca College - Toronto, ON</span>
+                <br />
+                Computer Programming
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <span class="year">2014 - 2016</span>
+                <br />
+                Hong Kong Higher Diploma
+              </th>
+              <td>
+                <span class="school">
+                  Hong Kong Baptist University - Hong Kong
+                </span>
+                <br />
+                Post-production (Editing and Sound Mixing)
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div id="contact">
+      <div class="section">
+        <div class="menu">
+          <button class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <h2>Contact Me</h2>
+        </div>
+
+        <form action="https://httpbin.org/post" method="post">
+          <label for="firstname">First Name</label>
+          <input
+            id="firstname"
+            name="firstname"
+            type="text"
+            autocomplete="given-name"
+            maxlength="30"
+            tabindex="1"
+            placeholder="Enter Your First Name"
+            required
+          />
+
+          <label for="lastname">Last Name</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            autocomplete="family-name"
+            maxlength="30"
+            tabindex="2"
+            placeholder="Enter Your Last Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            tabindex="3"
+            placeholder="Enter Your Email"
+            required
+          />
+
+          <label for="Address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            type="text"
+            rows="2"
+            cols="50"
+            tabindex="4"
+            placeholder="Enter Your Address"
+            required
+          ></textarea>
+
+          <label for="city">City</label>
+          <input
+            id="city"
+            name="city"
+            type="text"
+            list="cities"
+            tabindex="5"
+            placeholder="Select Your City"
+            required
+          />
+
+          <datalist id="cities">
+            <option value="Calgary"></option>
+            <option value="Edmonton"></option>
+            <option value="Hamilton"></option>
+            <option value="Kitchener"></option>
+            <option value="Montréal"></option>
+            <option value="Ottawa"></option>
+            <option value="Québec City"></option>
+            <option value="Toronto"></option>
+            <option value="Vancouver"></option>
+            <option value="Winnipeg"></option>
+          </datalist>
+
+          <label for="postalcode">Postal Code</label>
+          <input
+            id="postalcode"
+            name="postalcode"
+            type="text"
+            pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+            title="Must Be A Valid Canadian Postal Code"
+            tabindex="6"
+            placeholder="Enter Your Postal Code"
+            required
+          />
+
+          <label for="messageabout">Messgae About</label>
+          <div class="radiobutton">
+            <input
+              type="radio"
+              id="question"
+              class="question"
+              name="messageabout"
+              value="question"
+              tabindex="7"
+              required
+            />
+            <label for="question" class="question">Question</label>
+            <br />
+            <input
+              type="radio"
+              id="comment"
+              class="comment"
+              name="messageabout"
+              value="comment"
+              tabindex="8"
+              required
+            />
+            <label for="comment" class="comment">Comment</label>
+            <br />
+            <input
+              type="radio"
+              id="hiring"
+              class="hiring"
+              name="messageabout"
+              value="hiring"
+              tabindex="9"
+              required
+            />
+            <label for="hiring" class="hiring">Hiring</label>
+          </div>
+
+          <label id="label-hourlyrate" for="hourlyrate">Hourly Rate</label>
+          <input
+            id="hourlyrate"
+            name="hourlyrate"
+            type="text"
+            pattern="^[1-9]?\d[.]?\d?\d?$"
+            title="Must Be A Valid Number"
+            tabindex="10"
+            placeholder="Enter Offer"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            tabindex="11"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" tabindex="12" required />
+
+          <label for="upload">Upload</label>
+          <input
+            id="upload"
+            name="upload"
+            type="file"
+            tabindex="13"
+            accept=".doc, .docx, .pdf"
+            required
+          />
+
+          <input type="submit" value="SEND" />
+          <input type="reset" value="CLEAR" />
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
