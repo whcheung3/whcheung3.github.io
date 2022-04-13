@@ -113,6 +113,7 @@ button {
   /* Pointer when Focus on Buttons */
   cursor: pointer;
   text-align: center;
+  padding: 0;
 }
 
 /* Background Image */
