@@ -118,7 +118,7 @@ button {
 
 /* Background Image */
 .bg-image {
-  background-image: url("background.jpg");
+  background-image: url("background.jpeg");
   /* Add Blur Effect */
   filter: blur(10px);
   -webkit-filter: blur(10px);
