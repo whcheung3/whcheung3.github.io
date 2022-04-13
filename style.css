@@ -106,12 +106,13 @@ button {
   /* Circle Shape */
   border-radius: 50%;
   border: 0;
-  width: 5rem;
-  height: 5rem;
+  width: 2.8em;
+  height: 2.8em;
   color: white;
   font-size: 1.8em;
   /* Pointer when Focus on Buttons */
   cursor: pointer;
+  text-align: center;
 }
 
 /* Background Image */
